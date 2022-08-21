@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neomorfismo</title>
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navBar">
+                <div class="name-navBar">
+                    <h2>Jhorman <span>Nieto</span> P</h2> <hr>
+                </div>
+                <div class="list-navBar">
+                    <img src="img/menu.png" alt="menu">
+                    <ul>
+                        <li><a id="active" href="#">Inicio</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Acerca De</a></li>
+                    </ul> <hr>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div class="cont">
+                <div class="cont-img">
+                    <div class="display">
+                        <div class="redPoint">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont-input">
+
+                    <div class="select-color">
+                        <input id="colores" type="color" title="select-color">
+                    </div>
+
+                    <div class="size">
+                        <h4>Size</h4>
+                        <input id="size" type="range" value="1" min="1" max="500">
+                    </div>
+
+                    <div class="difuminado">
+                        <h4>Sepia</h4>
+                        <input id="sepia" type="range" value="1" min="1" max="500">
+                    </div>
+
+                    <div class="saturate">
+                        <h4>Saturate</h4>
+                        <input id="saturate" type="range" value="0" max="100">
+                    </div>
+
+                    <div class="border">
+                        <h4>border radius</h4>
+                        <input id="border" tamaño" type="range" value="0" max="300">
+                    </div>
+
+                    <div class="transparencia">
+                        <h4>Blur</h4>
+                        <input id="blur" type="range" value="0" max="500">
+                    </div>
+
+                    <div class="box-shadow">
+                        <h4>Box shadow</h4>
+                        <input id="box" type="range" value="0" max="100">
+                    </div>
+
+                    <div class="border">
+                        <h4>border</h4>
+                        <input id="linearBorder" type="range" value="0" max="100">
+                        <input id="colorBorder" type="color">
+                    </div>
+
+                    <div class="opacity">
+                        <h4>opacidad</h4>
+                        <input id="opacityRange" type="range" value="0" max="100">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <section class="cont-result">
+            <div class="results">
+                <div class="sizePrintW"></div>
+                <div class="sizePrintH"></div>
+                <div class="borderPrint"></div>
+                <div class="blurPrint"></div>
+                <div class="saturatePrint"></div>
+                <div class="boxShadow"></div>
+                <div class="linearborder"></div>
+                <div class="opacityPrint"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Derechos reservados &copy; Jhorman Nieto P</h4>
+    </footer>
+</body>
+<script src="javascript/app.js"></script>
+</html>

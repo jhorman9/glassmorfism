@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+header nav .navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    margin-bottom: 75px;
+}
+
+header nav .navBar .name-navBar{
+    width: 50%;
+    color: bisque;
+}
+
+header nav .navBar .list-navBar img{
+    display: none;
+}
+
+header nav .navBar .name-navBar h2{
+    padding-left: 30px;
+}
+
+header nav .navBar .name-navBar span{
+    color: aqua;
+}
+
+header nav .navBar .list-navBar{
+    width: 50%;
+}
+
+header nav .navBar .list-navBar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: bisque;
+}
+
+header nav .navBar .list-navBar ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .navBar .list-navBar ul li:first-child{
+    border-radius: 5px;
+    background-color: aqua;
+    color: black;
+}
+
+header nav .navBar .list-navBar ul li a{
+    text-decoration: none;
+    color: inherit;
+    padding: 8.5px 10px;
+}
+
+header nav .navBar .list-navBar ul li a:hover{
+    background-color: aqua; 
+    color: black;  
+    border-radius: 5px;
+    transition: ease-in 0.5s;
+}
+
+/*----------MAIN---------*/
+
+main form .cont{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(10,1fr);
+}
+
+main form .cont .cont-img{
+    position: relative;
+    grid-column: 2/5;
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+main form .cont .cont-img .display{
+    display: flex;
+    background-color: yellow;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+main form .cont .cont-img .inyectar .redPoint{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+main form .cont .cont-input{
+    grid-column: 7/10;
+    place-content: center;
+}
+
+main form .cont .cont-input input{
+    width: 100%;
+}
+
+main form .cont .cont-input .select-color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main form .cont .cont-input .select-color input{
+    width: 50px;
+}
+
+footer{
+    text-align: center;
+}
+
+main .cont-result{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .cont-result .results{
+    text-align: center;
+    width: 75%;
+    background-color: rgba(132, 111, 4, 0.356);
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+@media (max-width: 800px) {
+    main form .cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main form .cont .cont-img{
+        width: 75%;
+        height: 50%;
+        margin-bottom: 15%;
+       
+    }
+
+    main form .cont .cont-input{
+        width: 75%;
+    }
+    
+}
+
+
